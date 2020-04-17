@@ -5,52 +5,45 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: rgba(12, 12, 12, 0.89);
+  background-color: rgba(12, 12, 12, 0.952);
 }
 
 h1 {
   font-size: 8rem;
   color: rgba(255, 241, 41, 0.788);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
-.slide {
-  height: 100vh;
-  width: 100%;
+.swiper-container {
+  width: 650px;
+  height: auto;
+  z-index: -9999;
 }
 
-.slide .slide-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow-x: auto;
-  margin: 11rem 12rem 0 12rem;
+@media (max-width: 990px) {
+  h1 {
+    font-size: 4rem;
+    color: rgba(255, 241, 41, 0.788);
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+  }
+  .swiper-container {
+    width: 500px;
+    height: auto;
+  }
 }
 
-.slide .slide-flex img {
-  width: 20%;
-  margin: 1rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
-}
-
-p {
-  font-size: 2rem;
-  color: rgba(245, 243, 224, 0.788);
-  text-align: center;
-}
-
-.slide-flex::-webkit-scrollbar {
-  height: 6px;
-}
-
-.slide-flex::-webkit-scrollbar-thumb {
-  background-color: #a5ddbc;
-  border-radius: 9px;
-  width: 10%;
-}
-
-.slide-flex::-webkit-scrollbar-track {
-  background-color: transparent;
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+    color: rgba(255, 241, 41, 0.788);
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+  }
+  .swiper-container {
+    width: 350px;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
