@@ -1,0 +1,56 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(12, 12, 12, 0.89);
+}
+
+h1 {
+  font-size: 8rem;
+  color: rgba(255, 241, 41, 0.788);
+}
+
+.slide {
+  height: 100vh;
+  width: 100%;
+}
+
+.slide .slide-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  margin: 11rem 12rem 0 12rem;
+}
+
+.slide .slide-flex img {
+  width: 20%;
+  margin: 1rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+p {
+  font-size: 2rem;
+  color: rgba(245, 243, 224, 0.788);
+  text-align: center;
+}
+
+.slide-flex::-webkit-scrollbar {
+  height: 6px;
+}
+
+.slide-flex::-webkit-scrollbar-thumb {
+  background-color: #a5ddbc;
+  border-radius: 9px;
+  width: 10%;
+}
+
+.slide-flex::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+/*# sourceMappingURL=style.css.map */

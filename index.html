@@ -5,20 +5,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vue_study</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@luxdamore/vue-cursor-fx@latest/dist/CursorFx.css">
 </head>
 
 <body>
-  <div id="slide">
-    <img v-bind:src="slidename" alt="">
+  <header>
+    <h1>V-for_V-bind_CSS-Slider</h1>
+  </header>
+  <div id="app" class="app">
+    <cursor-fx color="#fff" color-hover="#fff" outside-size="130px" inside-size="12px" delay="90s"></cursor-fx>
+
+    <div class="slide" id="slide">
+      <div class="slide-flex" data-cursor-hover>
+        <img v-for="item in slideArray" v-bind:src="item" alt="">
+      </div>
+    <p>scroll→→</p>
   </div>
+
+
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  
   <script>
     new Vue({
       el: '#slide',
       data: {
-        slidename: 'img/img1.png'
+        slideArray: [
+          'img/img1.png',
+          'img/img2.png',
+          'img/img3.png',
+          'img/img4.png',
+          'img/img1.png',
+          'img/img2.png',
+        ]
       }
-    })
+    });
+  </script>
+  <script src="https://unpkg.com/@luxdamore/vue-cursor-fx@latest/dist/CursorFx.umd.min.js"></script>
+  <script>
+    // Vue
+    new Vue().$mount(
+      '#app'
+    );
   </script>
 </body>
 
