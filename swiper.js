@@ -1,8 +1,11 @@
 var mySwiper = new Swiper ('.swiper-container', {
   // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  effect: 'fade',
+  // direction: 'horizontal',
+  // loop: true,
+  speed:1000,
+  effect: 'coverflow',
+  slidesPerView: 3,
+  
 
   // If we need pagination
   pagination: {
@@ -19,12 +22,15 @@ var mySwiper = new Swiper ('.swiper-container', {
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
   autoplay: {
-    delay: 5000,
-  },
+		delay: 1000,
+		stopOnLastSlide: false,
+		disableOnInteraction: false,
+		reverseDirection: false
+	},
   fadeEffect: {
     crossFade: true
   },
